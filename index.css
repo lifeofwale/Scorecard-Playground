@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    color: white;
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    height: 100vh;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+
+.container::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: linear-gradient(180deg ,rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(40, 43, 84, 0) 70%, rgba(40, 43, 84, 0.3) 100%), url("https://plus.unsplash.com/premium_photo-1667296787659-aacfba2e1e5b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFza2V0YmFsbCUyMGNvdXJ0fGVufDB8fDB8fHww") center/cover no-repeat;
+    filter: blur(2px);
+    z-index: 0;
+    
+}
+
+.container > * {
+    z-index: 1;
+}
+
+.scorecard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start; 
+    background: rgba(143, 135, 131, 0.10);
+    border-radius: 12px;
+    box-shadow:
+    inset 0 4px 3px rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 251, 251, 0.10);
+
+    padding: 20px;
+    text-align: center;
+    column-gap: 24px;
+
+    
+}
+
+.team > h5 {
+ margin-top: 0px;
+}
+
+.score {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+}
+
+#elevate {
+    border: 2px solid #fafafa11;  
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: -40px;
+    background-color: #1a1a1a;
+    box-shadow:
+    inset 0 4px 3px rgba(255, 255, 255, 0.05),  
+    inset 0 -4px 2px rgba(0, 0, 0, 0.6);
+}
+
+#elevate > div.score{
+    border: 0.1px solid #fafafa11;  
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #000;
+    width: 80px;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    background: rgba(14, 8, 3, 0.70);
+   
+}
